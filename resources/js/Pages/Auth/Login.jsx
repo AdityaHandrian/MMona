@@ -26,7 +26,7 @@ export default function Login({ status, canResetPassword }) {
             {/* Full Page Layout */}
             <div className="min-h-screen bg-[#F8F7F0] flex flex-col">
                 {/* Header dengan Logo */}
-                <div className="w-full px-6 py-6">
+                <div className="w-full px-6 py-6 bg-white shadow-sm">
                     <div className="flex items-center">
                         <div className="flex items-center">
                             {/* Logo MONA */}
