@@ -3,6 +3,7 @@ import InputError from '@/Components/InputError';
 import InputLabel from '@/Components/InputLabel';
 import PrimaryButton from '@/Components/PrimaryButton';
 import TextInput from '@/Components/TextInput';
+import AppLayout from '@/Layouts/AppLayout';
 import { Head, Link, useForm } from '@inertiajs/react';
 
 export default function Login({ status, canResetPassword }) {
@@ -20,17 +21,17 @@ export default function Login({ status, canResetPassword }) {
     };
 
     return (
-        <>
+        <AppLayout>
             <Head title="Log in" />
             
             {/* Full Page Layout */}
             <div className="min-h-screen bg-[#F8F7F0] flex flex-col">
                 {/* Header dengan Logo */}
-                <div className="w-full px-8 py-6 bg-white shadow-sm">
+                {/* <div className="w-full px-8 py-6 bg-white shadow-sm">
                     <div className="flex items-center">
                         <div className="flex items-center">
-                            {/* Logo MONA */}
-                            <div className="relative">
+                            Logo MONA */}
+                            {/* <div className="relative">
                                 <img 
                                     src="/images/logo.png" 
                                     alt="MONA Logo"
@@ -40,7 +41,7 @@ export default function Login({ status, canResetPassword }) {
                             <span className="ml-3 text-3xl font-bold text-[#058743] tracking-wide">MONA</span>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 {/* Main Content Container */}
                 <div className="flex-1 flex items-center justify-center px-4 py-8">
@@ -190,6 +191,6 @@ export default function Login({ status, canResetPassword }) {
                     </div>
                 </div>
             </div>
-        </>
+        </AppLayout>
     );
 }

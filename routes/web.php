@@ -26,6 +26,10 @@ Route::get('/scan-receipt', function () {
     return Inertia::render('ScanReceipt');
 })->name('scan-receipt');
 
+Route::get('/budget', function () {
+    return Inertia::render('Budget');
+})->name('budget');
+
 Route::post('/process-receipt', [OcrController::class, 'processReceipt']);
 
 Route::middleware('auth')->group(function () {
